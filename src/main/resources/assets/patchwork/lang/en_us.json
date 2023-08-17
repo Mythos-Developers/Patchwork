@@ -1,0 +1,21 @@
+{
+
+  "enchantment.patchwork.ricochet": "Ricochet",
+  "enchantment.patchwork.fractal": "Fractal",
+  "enchantment.patchwork.leech": "Leech",
+  "enchantment.patchwork.frostbite": "Frostbite",
+  "enchantment.patchwork.plague": "Plague",
+  "enchantment.patchwork.stasis": "Stasis",
+  "enchantment.patchwork.dominate": "Dominate",
+  "enchantment.patchwork.sunburn": "Sunburn",
+
+  "item.patchwork.primordium_helmet": "Primordium Helmet",
+  "item.patchwork.primordium_chestplate": "Primordium Chestplate",
+  "item.patchwork.primordium_leggings": "Primordium Leggings",
+  "item.patchwork.primordium_boots": "Primordium Boots",
+
+  "category.patchwork.patchwork": "Patchwork",
+
+  "key.patchwork.open_artisan": "Open Artisan"
+
+}
