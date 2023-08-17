@@ -7,6 +7,12 @@ insert_final_newline = true
 tab_width = 4
 trim_trailing_whitespace = true
 
+<<<<<<< HEAD
+=======
+[*.md]
+trim_trailing_whitespace = false
+
+>>>>>>> 0de2229 (Added Patchwork to Git.)
 [*.gradle]
 indent_style = tab
 
@@ -28,7 +34,10 @@ tab_width = 2
 [*.properties]
 indent_style = space
 indent_size = 2
+<<<<<<< HEAD
 
 [.editorconfig]
 indent_style = space
 indent_size = 4
+=======
+>>>>>>> 0de2229 (Added Patchwork to Git.)
