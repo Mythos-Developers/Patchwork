@@ -13,7 +13,17 @@ import net.mythos.patchwork.Patchwork;
 public class Sunburn extends PatchworkEnchantment {
 
 	public Sunburn() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET}, 8, 2);
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET});
+	}
+
+	@Override
+	public int getMinPower(int level) {
+		return 8 * level;
+	}
+
+	@Override
+	public int getMaxLevel() {
+		return 2;
 	}
 
 	@Override

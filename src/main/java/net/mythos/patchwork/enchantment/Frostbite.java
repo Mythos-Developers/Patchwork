@@ -16,7 +16,17 @@ import net.mythos.patchwork.Patchwork;
 public class Frostbite extends PatchworkEnchantment {
 
 	public Frostbite() {
-		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND}, 6, 2);
+		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+	}
+
+	@Override
+	public int getMinPower(int level) {
+		return 6 * level;
+	}
+
+	@Override
+	public int getMaxLevel() {
+		return 2;
 	}
 
 	@Override

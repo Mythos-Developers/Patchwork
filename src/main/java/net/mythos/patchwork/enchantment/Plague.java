@@ -15,7 +15,17 @@ import net.mythos.patchwork.Patchwork;
 public class Plague extends PatchworkEnchantment {
 
 	public Plague() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND}, 6, 4);
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+	}
+
+	@Override
+	public int getMinPower(int level) {
+		return 6 * level;
+	}
+
+	@Override
+	public int getMaxLevel() {
+		return 4;
 	}
 
 	@Override

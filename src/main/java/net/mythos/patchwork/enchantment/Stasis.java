@@ -15,7 +15,17 @@ import net.mythos.patchwork.Patchwork;
 public class Stasis extends PatchworkEnchantment {
 
 	public Stasis() {
-		super(PatchworkRarity.LEGENDARY, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND}, 6, 4);
+		super(PatchworkRarity.LEGENDARY, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+	}
+
+	@Override
+	public int getMinPower(int level) {
+		return 6 * level;
+	}
+
+	@Override
+	public int getMaxLevel() {
+		return 4;
 	}
 
 	@Override
