@@ -29,6 +29,10 @@ public abstract class PatchworkEnchantment extends Enchantment {
 			case HIDDEN -> { mutableText.formatted(Formatting.OBFUSCATED); }
 		}
 
+		if (level != 1 || this.getMaxLevel() != 1) {
+			mutableText.append(CommonTexts.SPACE).append(Text.translatable("enchantment.level." + level));
+		}
+
 		return mutableText;
 	}
 
