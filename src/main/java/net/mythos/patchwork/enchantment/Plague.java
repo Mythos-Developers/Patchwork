@@ -2,7 +2,6 @@ package net.mythos.patchwork.enchantment;
 
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -11,11 +10,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
+import net.mythos.patchwork.template.PatchworkEnchantmentType;
 
 public class Plague extends PatchworkEnchantment {
 
 	public Plague() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, PatchworkEnchantmentType.eitherHand());
 	}
 
 	@Override

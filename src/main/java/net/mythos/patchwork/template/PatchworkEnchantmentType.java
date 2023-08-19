@@ -4,37 +4,35 @@ import net.minecraft.entity.EquipmentSlot;
 
 public class PatchworkEnchantmentType {
 
-	//TODO Implement these methods in PatchworkEnchantment and all classes in the net.mythos.enchantment package.
-
-	public EquipmentSlot[] eitherHand() {
+	public static EquipmentSlot[] eitherHand() {
 		return new EquipmentSlot[] {EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND};
 	}
 
-	public EquipmentSlot[] mainHand() {
+	public static EquipmentSlot[] mainHand() {
 		return new EquipmentSlot[] {EquipmentSlot.MAINHAND};
 	}
 
-	public EquipmentSlot[] offHand() {
+	public static EquipmentSlot[] offHand() {
 		return new EquipmentSlot[] {EquipmentSlot.OFFHAND};
 	}
 
-	public EquipmentSlot[] armorAll() {
+	public static EquipmentSlot[] armorAll() {
 		return new EquipmentSlot[] {EquipmentSlot.FEET, EquipmentSlot.LEGS, EquipmentSlot.CHEST, EquipmentSlot.HEAD};
 	}
 
-	public EquipmentSlot[] helmet() {
+	public static EquipmentSlot[] helmet() {
 		return new EquipmentSlot[] {EquipmentSlot.HEAD};
 	}
 
-	public EquipmentSlot[] chestplate() {
+	public static EquipmentSlot[] chestplate() {
 		return new EquipmentSlot[] {EquipmentSlot.CHEST};
 	}
 
-	public EquipmentSlot[] leggings() {
+	public static EquipmentSlot[] leggings() {
 		return new EquipmentSlot[] {EquipmentSlot.LEGS};
 	}
 
-	public EquipmentSlot[] boots() {
+	public static EquipmentSlot[] boots() {
 		return new EquipmentSlot[] {EquipmentSlot.FEET};
 	}
 
