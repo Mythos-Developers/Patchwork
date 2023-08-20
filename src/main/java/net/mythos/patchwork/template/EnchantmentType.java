@@ -2,7 +2,7 @@ package net.mythos.patchwork.template;
 
 import net.minecraft.entity.EquipmentSlot;
 
-public class PatchworkEnchantmentType {
+public class EnchantmentType {
 
 	public static EquipmentSlot[] eitherHand() {
 		return new EquipmentSlot[] {EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND};

@@ -8,7 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
-import net.mythos.patchwork.template.PatchworkEnchantmentType;
+import net.mythos.patchwork.template.EnchantmentType;
 
 import java.util.Objects;
 import java.util.Random;
@@ -16,7 +16,7 @@ import java.util.Random;
 public class Ricochet extends PatchworkEnchantment {
 
 	public Ricochet() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, PatchworkEnchantmentType.armorAll());
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, EnchantmentType.armorAll());
 	}
 
 	public int getProtectionAmount(int level, DamageSource source) {

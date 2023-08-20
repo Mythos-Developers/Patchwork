@@ -7,12 +7,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
-import net.mythos.patchwork.template.PatchworkEnchantmentType;
+import net.mythos.patchwork.template.EnchantmentType;
 
 public class Fractal extends PatchworkEnchantment {
 
 	public Fractal() {
-		super(PatchworkRarity.MYTHIC, Rarity.VERY_RARE, EnchantmentTarget.WEAPON, PatchworkEnchantmentType.eitherHand());
+		super(PatchworkRarity.MYTHIC, Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand());
 	}
 
 	@Override

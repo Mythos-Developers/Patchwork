@@ -9,11 +9,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
+import net.mythos.patchwork.template.EnchantmentType;
 
 public class Sunburn extends PatchworkEnchantment {
 
 	public Sunburn() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET});
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, EnchantmentType.armorAll());
 	}
 
 	@Override

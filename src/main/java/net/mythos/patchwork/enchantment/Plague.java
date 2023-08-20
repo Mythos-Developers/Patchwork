@@ -10,12 +10,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
-import net.mythos.patchwork.template.PatchworkEnchantmentType;
+import net.mythos.patchwork.template.EnchantmentType;
 
 public class Plague extends PatchworkEnchantment {
 
 	public Plague() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, PatchworkEnchantmentType.eitherHand());
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand());
 	}
 
 	@Override

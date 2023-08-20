@@ -9,12 +9,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
-import net.mythos.patchwork.template.PatchworkEnchantmentType;
+import net.mythos.patchwork.template.EnchantmentType;
 
 public class Leech extends PatchworkEnchantment {
 
 	public Leech() {
-		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, PatchworkEnchantmentType.eitherHand());
+		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand());
 	}
 
 	@Override
