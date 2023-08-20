@@ -38,6 +38,7 @@ public class Patchwork implements ModInitializer {
 		Stasis.registerEnchantment();
 		Dominate.registerEnchantment();
 		Sunburn.registerEnchantment();
+		Uppercut.registerEnchantment();
 	}
 
 	public static void registerItem(String name, Item item) {

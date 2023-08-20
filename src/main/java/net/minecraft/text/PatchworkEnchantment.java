@@ -8,10 +8,35 @@ import net.minecraft.util.Formatting;
 public abstract class PatchworkEnchantment extends Enchantment {
 
 	private final PatchworkRarity rarity;
+	private int maxLevel = 0;
+	private int minPower = 0;
+
+	protected PatchworkEnchantment(PatchworkRarity rarity, Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes, int minPower, int maxLevel) {
+		super(weight, type, slotTypes);
+		this.rarity = rarity;
+		this.minPower = minPower;
+		this.maxLevel = maxLevel;
+	}
+
+	protected PatchworkEnchantment(PatchworkRarity rarity, Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes, int maxLevel) {
+		super(weight, type, slotTypes);
+		this.rarity = rarity;
+		this.maxLevel = maxLevel;
+	}
 
 	protected PatchworkEnchantment(PatchworkRarity rarity, Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
 		super(weight, type, slotTypes);
 		this.rarity = rarity;
+	}
+
+	@Override
+	public int getMaxLevel() {
+		return maxLevel;
+	}
+
+	@Override
+	public int getMinPower(int level) {
+		return minPower * level;
 	}
 
 	@Override

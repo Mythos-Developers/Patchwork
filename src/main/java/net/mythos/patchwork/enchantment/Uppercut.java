@@ -12,17 +12,17 @@ import net.minecraft.util.Identifier;
 import net.mythos.patchwork.Patchwork;
 import net.mythos.patchwork.template.EnchantmentType;
 
-public class Plague extends PatchworkEnchantment {
+public class Uppercut extends PatchworkEnchantment {
 
-	public Plague() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand(), 6, 4);
+	public Uppercut() {
+		super(PatchworkRarity.LEGENDARY, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand(), 8, 5);
 	}
 
 	@Override
 	public void onTargetDamaged(LivingEntity user, Entity target, int level) {
 
 		if(target instanceof LivingEntity) {
-			((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 2 * level, level - 1, true, false));
+			((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 20, level * 2, true, false));
 		}
 
 		super.onTargetDamaged(user, target, level);
@@ -30,7 +30,7 @@ public class Plague extends PatchworkEnchantment {
 	}
 
 	public static void registerEnchantment() {
-		Registry.register(Registries.ENCHANTMENT, new Identifier(Patchwork.ID, "plague"), new Plague());
+		Registry.register(Registries.ENCHANTMENT, new Identifier(Patchwork.ID, "uppercut"), new Uppercut());
 	}
 
 }

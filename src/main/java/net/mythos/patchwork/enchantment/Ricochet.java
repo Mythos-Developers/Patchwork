@@ -16,7 +16,7 @@ import java.util.Random;
 public class Ricochet extends PatchworkEnchantment {
 
 	public Ricochet() {
-		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, EnchantmentType.armorAll());
+		super(PatchworkRarity.EPIC, Rarity.RARE, EnchantmentTarget.ARMOR, EnchantmentType.armorAll(),5 , 3);
 	}
 
 	public int getProtectionAmount(int level, DamageSource source) {
@@ -37,16 +37,6 @@ public class Ricochet extends PatchworkEnchantment {
 			return 0;
 		}
 
-	}
-
-	@Override
-	public int getMinPower(int level) {
-		return 5 * level;
-	}
-
-	@Override
-	public int getMaxLevel() {
-		return 3;
 	}
 
 	public static void registerEnchantment() {

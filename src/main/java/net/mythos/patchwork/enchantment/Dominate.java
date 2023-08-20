@@ -13,17 +13,7 @@ import net.mythos.patchwork.template.EnchantmentType;
 public class Dominate extends PatchworkEnchantment {
 
 	public Dominate() {
-		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand());
-	}
-
-	@Override
-	public int getMinPower(int level) {
-		return 6 * level;
-	}
-
-	@Override
-	public int getMaxLevel() {
-		return 1;
+		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand(), 6, 1);
 	}
 
 	@Override

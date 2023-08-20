@@ -12,17 +12,7 @@ import net.mythos.patchwork.template.EnchantmentType;
 public class Fractal extends PatchworkEnchantment {
 
 	public Fractal() {
-		super(PatchworkRarity.MYTHIC, Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand());
-	}
-
-	@Override
-	public int getMinPower(int level) {
-		return 16 * level;
-	}
-
-	@Override
-	public int getMaxLevel() {
-		return 6;
+		super(PatchworkRarity.MYTHIC, Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand(),16, 6);
 	}
 
 	@Override

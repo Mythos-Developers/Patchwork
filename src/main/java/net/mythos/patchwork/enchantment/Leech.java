@@ -14,17 +14,7 @@ import net.mythos.patchwork.template.EnchantmentType;
 public class Leech extends PatchworkEnchantment {
 
 	public Leech() {
-		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand());
-	}
-
-	@Override
-	public int getMinPower(int level) {
-		return 7 * level;
-	}
-
-	@Override
-	public int getMaxLevel() {
-		return 3;
+		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand(), 7, 3);
 	}
 
 	@Override
