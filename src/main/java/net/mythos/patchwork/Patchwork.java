@@ -1,5 +1,6 @@
 package net.mythos.patchwork;
 
+import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -8,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.mythos.patchwork.armor.PrimordiumArmor;
 import net.mythos.patchwork.enchantment.*;
+import net.mythos.patchwork.registry.RegisterItems;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -26,6 +28,8 @@ public class Patchwork implements ModInitializer {
 		PrimordiumArmor.registerItems();
 
 		registerEnchantments();
+
+		FieldRegistrationHandler.register(RegisterItems.class, ID, true);
 
 	}
 
