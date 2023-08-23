@@ -43,6 +43,7 @@ public class Patchwork implements ModInitializer {
 		Dominate.registerEnchantment();
 		Sunburn.registerEnchantment();
 		Uppercut.registerEnchantment();
+		Suction.registerEnchantment();
 	}
 
 	public static void registerItem(String name, Item item) {

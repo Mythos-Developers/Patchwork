@@ -9,8 +9,10 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Vec3d;
 import net.mythos.patchwork.Patchwork;
 import net.mythos.patchwork.template.EnchantmentType;
+import org.quiltmc.loader.impl.lib.sat4j.core.Vec;
 
 public class Uppercut extends PatchworkEnchantment {
 
@@ -21,9 +23,14 @@ public class Uppercut extends PatchworkEnchantment {
 	@Override
 	public void onTargetDamaged(LivingEntity user, Entity target, int level) {
 
-		if(target instanceof LivingEntity) {
+		Vec3d vectorUp = target.getVelocity().add(0.0, target.getVelocity().getX() + target.getVelocity().getZ(), 0.0);
+		vectorUp.multiply(0.0, 1.0, 0.0);
+
+		target.setVelocity(vectorUp);
+
+		/* if(target instanceof LivingEntity) {
 			((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 20, level * 2, true, false));
-		}
+		} */
 
 		super.onTargetDamaged(user, target, level);
 
