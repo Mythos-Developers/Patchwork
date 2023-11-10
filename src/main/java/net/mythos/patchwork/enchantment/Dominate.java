@@ -3,16 +3,16 @@ package net.mythos.patchwork.enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.text.PatchworkEnchantment;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.mythos.patchwork.Patchwork;
-import net.mythos.patchwork.common.EnchantmentType;
+import net.mythos.patchwork.template.EnchantmentType;
 
 public class Dominate extends PatchworkEnchantment {
 
 	public Dominate() {
-		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.hand(), 6, 1);
+		super(PatchworkRarity.RARE, Rarity.RARE, EnchantmentTarget.WEAPON, EnchantmentType.eitherHand(), 6, 1);
 	}
 
 	@Override
